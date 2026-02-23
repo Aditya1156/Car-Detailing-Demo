@@ -30,10 +30,10 @@ export const siteConfig = {
     "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=80&auto=format",
 
   stats: [
-    { value: "15000+", label: "Cars Detailed" },
-    { value: "8500+", label: "Happy Customers" },
-    { value: "50+", label: "Expert Workers" },
-    { value: "10+", label: "Years Experience" },
+    { value: 15000, suffix: "+", label: "Cars Detailed" },
+    { value: 8500, suffix: "+", label: "Happy Customers" },
+    { value: 50, suffix: "+", label: "Expert Workers" },
+    { value: 10, suffix: "+", label: "Years Experience" },
   ],
   services: [
     {
@@ -129,6 +129,117 @@ export const siteConfig = {
       role: "Audi Owner",
       text: "Professional team, premium products, and outstanding results. I won't go anywhere else for car care.",
       rating: 5,
+    },
+  ],
+  pricing: [
+    {
+      name: "Basic Wash",
+      price: "499",
+      currency: "INR",
+      period: "per wash",
+      description: "Quick exterior refresh for your daily driver",
+      features: [
+        "Exterior Hand Wash",
+        "Tire & Rim Cleaning",
+        "Window Cleaning",
+        "Dashboard Wipe",
+        "Air Freshener",
+      ],
+      popular: false,
+    },
+    {
+      name: "Premium Detail",
+      price: "1,999",
+      currency: "INR",
+      period: "per session",
+      description: "Complete interior & exterior transformation",
+      features: [
+        "Everything in Basic",
+        "Interior Deep Cleaning",
+        "Leather Conditioning",
+        "Engine Bay Cleaning",
+        "Paint Sealant",
+        "Headlight Polish",
+      ],
+      popular: true,
+    },
+    {
+      name: "Ceramic Shield",
+      price: "8,999",
+      currency: "INR",
+      period: "lasts 2 years",
+      description: "Ultimate protection with ceramic coating",
+      features: [
+        "Everything in Premium",
+        "Paint Correction",
+        "9H Ceramic Coating",
+        "Hydrophobic Protection",
+        "UV & Scratch Resistance",
+        "2-Year Warranty",
+        "Free Maintenance Wash",
+      ],
+      popular: false,
+    },
+  ],
+  beforeAfter: [
+    {
+      before:
+        "https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80&auto=format",
+      after:
+        "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80&auto=format",
+      label: "Exterior Detailing",
+    },
+    {
+      before:
+        "https://images.unsplash.com/photo-1507136566006-cfc505b114fc?w=600&q=80&auto=format",
+      after:
+        "https://images.unsplash.com/photo-1542362567-b07e54358753?w=600&q=80&auto=format",
+      label: "Interior Restoration",
+    },
+  ],
+  about: {
+    title: "About A1 Car Detailing",
+    description:
+      "Founded with a passion for automotive excellence, A1 Car Detailing has been transforming vehicles across Bangalore for over a decade. Our team of certified professionals uses only premium products and cutting-edge techniques to deliver results that exceed expectations.",
+    highlights: [
+      { label: "Founded", value: "2014" },
+      { label: "Team Size", value: "50+" },
+      { label: "Cars Serviced", value: "15,000+" },
+      { label: "5-Star Reviews", value: "4,200+" },
+    ],
+    image:
+      "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=800&q=80&auto=format",
+  },
+  faq: [
+    {
+      question: "How long does a full detail take?",
+      answer:
+        "A basic wash takes about 45 minutes. A premium detail takes 3-4 hours, and ceramic coating requires 1-2 days for proper curing.",
+    },
+    {
+      question: "How long does ceramic coating last?",
+      answer:
+        "Our 9H ceramic coating lasts 2-3 years with proper maintenance. We also offer a complimentary maintenance wash every 3 months.",
+    },
+    {
+      question: "Do you offer pickup and drop service?",
+      answer:
+        "Yes! We offer free pickup and drop within a 10km radius of our studio for Premium Detail and Ceramic Shield packages.",
+    },
+    {
+      question: "What products do you use?",
+      answer:
+        "We exclusively use premium detailing products from brands like Gtechniq, CarPro, and Koch Chemie — trusted globally by professional detailers.",
+    },
+    {
+      question: "Can I wait while my car is being detailed?",
+      answer:
+        "Absolutely! Our studio has a comfortable waiting lounge with Wi-Fi, refreshments, and a live view of your car being detailed.",
+    },
+    {
+      question: "Do you work on luxury and exotic cars?",
+      answer:
+        "Yes, we specialize in luxury, exotic, and high-end vehicles. Our technicians are trained to handle all makes including BMW, Mercedes, Audi, Porsche, and more.",
     },
   ],
   gallery: [

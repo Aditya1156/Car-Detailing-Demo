@@ -5,6 +5,8 @@ import { generateSiteMetadata, generateLocalBusinessSchema } from "@/lib/seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import BackToTop from "@/components/BackToTop";
+import Preloader from "@/components/Preloader";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,10 +31,12 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
+        <Preloader />
         <Navbar />
         <main>{children}</main>
         <Footer />
         <WhatsAppButton />
+        <BackToTop />
       </body>
     </html>
   );

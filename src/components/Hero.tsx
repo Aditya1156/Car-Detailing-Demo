@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Phone, Calendar } from "lucide-react";
+import Image from "next/image";
 import { siteConfig } from "@/config/site";
 
 export default function Hero() {
@@ -9,10 +10,13 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src={siteConfig.heroBg}
           alt="Premium car detailing"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
