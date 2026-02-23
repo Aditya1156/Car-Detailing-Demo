@@ -11,9 +11,10 @@ export default function Stats() {
     <section className="relative py-20 overflow-hidden">
       {/* Background car image overlay */}
       <div className="absolute inset-0 bg-surface" />
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-10"
-        style={{ backgroundImage: "url('/images/stats-bg.svg')" }}
+      <img
+        src={siteConfig.statsBg}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover opacity-10"
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4">

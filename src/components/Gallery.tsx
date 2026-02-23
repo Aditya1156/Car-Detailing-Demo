@@ -47,9 +47,11 @@ export default function Gallery() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative flex-shrink-0 w-48 md:w-64 lg:w-72 aspect-square group cursor-pointer overflow-hidden"
             >
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                style={{ backgroundImage: `url('${item.src}')` }}
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-colors duration-300 flex items-center justify-center">
                 <Instagram
