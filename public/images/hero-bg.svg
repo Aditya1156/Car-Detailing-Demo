@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d0d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111111;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="heroGlow" cx="50%" cy="60%" r="40%">
+      <stop offset="0%" style="stop-color:#e81c2e;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#e81c2e;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="heroBlur">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#heroBg)" />
+  <!-- Red glow underneath car -->
+  <ellipse cx="960" cy="680" rx="600" ry="200" fill="url(#heroGlow)" />
+  <!-- Ground line -->
+  <line x1="200" y1="700" x2="1720" y2="700" stroke="#e81c2e" stroke-width="1" opacity="0.3" />
+  <!-- Luxury car silhouette -->
+  <g transform="translate(960, 580)" opacity="0.9">
+    <!-- Car body -->
+    <path d="M-420,80 L-380,80 L-350,20 L-250,-40 L-180,-80 L-80,-100 L80,-100 L200,-80 L280,-40 L350,0 L400,40 L420,80 L420,100 L-420,100 Z" fill="url(#carBody)" stroke="#333" stroke-width="1" />
+    <!-- Roof line highlight -->
+    <path d="M-180,-80 L-80,-100 L80,-100 L200,-80" fill="none" stroke="#444" stroke-width="2" />
+    <!-- Windshield -->
+    <path d="M-170,-75 L-75,-95 L80,-95 L170,-70 L100,-20 L-120,-20 Z" fill="#111" stroke="#333" stroke-width="1" opacity="0.8" />
+    <!-- Front window reflection -->
+    <path d="M-160,-70 L-70,-88 L20,-88 L-50,-20 L-120,-20 Z" fill="#1a1a1a" opacity="0.5" />
+    <!-- Headlight left -->
+    <path d="M-400,50 L-370,30 L-340,50 L-370,65 Z" fill="#e81c2e" opacity="0.8" />
+    <!-- Headlight right -->
+    <path d="M380,40 L400,50 L420,70 L390,70 L370,55 Z" fill="#e81c2e" opacity="0.8" />
+    <!-- Front wheel -->
+    <circle cx="-240" cy="100" r="55" fill="#111" stroke="#333" stroke-width="2" />
+    <circle cx="-240" cy="100" r="35" fill="#1a1a1a" stroke="#444" stroke-width="1" />
+    <circle cx="-240" cy="100" r="8" fill="#333" />
+    <!-- Rear wheel -->
+    <circle cx="260" cy="100" r="55" fill="#111" stroke="#333" stroke-width="2" />
+    <circle cx="260" cy="100" r="35" fill="#1a1a1a" stroke="#444" stroke-width="1" />
+    <circle cx="260" cy="100" r="8" fill="#333" />
+    <!-- Side body line -->
+    <path d="M-380,60 L-200,40 L100,40 L380,55" fill="none" stroke="#444" stroke-width="1" />
+    <!-- Door handle -->
+    <rect x="-40" y="30" width="40" height="6" rx="3" fill="#444" />
+    <!-- Side mirror -->
+    <path d="M-200,-50 L-220,-40 L-220,-25 L-200,-30 Z" fill="#2a2a2a" stroke="#333" stroke-width="1" />
+  </g>
+  <!-- Ground reflection -->
+  <g transform="translate(960, 820) scale(1, -0.3)" opacity="0.08">
+    <path d="M-420,80 L-380,80 L-350,20 L-250,-40 L-180,-80 L-80,-100 L80,-100 L200,-80 L280,-40 L350,0 L400,40 L420,80 L420,100 L-420,100 Z" fill="#fff" />
+  </g>
+  <!-- Subtle grid lines in background -->
+  <g opacity="0.03">
+    <line x1="0" y1="200" x2="1920" y2="200" stroke="#fff" stroke-width="1" />
+    <line x1="0" y1="400" x2="1920" y2="400" stroke="#fff" stroke-width="1" />
+    <line x1="0" y1="600" x2="1920" y2="600" stroke="#fff" stroke-width="1" />
+    <line x1="0" y1="800" x2="1920" y2="800" stroke="#fff" stroke-width="1" />
+    <line x1="400" y1="0" x2="400" y2="1080" stroke="#fff" stroke-width="1" />
+    <line x1="800" y1="0" x2="800" y2="1080" stroke="#fff" stroke-width="1" />
+    <line x1="1200" y1="0" x2="1200" y2="1080" stroke="#fff" stroke-width="1" />
+    <line x1="1600" y1="0" x2="1600" y2="1080" stroke="#fff" stroke-width="1" />
+  </g>
+  <!-- Label text -->
+  <text x="960" y="950" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#fff" opacity="0.15" letter-spacing="8">HERO BACKGROUND - 1920x1080</text>
+  <!-- Red accent line at bottom -->
+  <rect x="860" y="980" width="200" height="3" rx="1.5" fill="#e81c2e" opacity="0.4" />
+</svg>

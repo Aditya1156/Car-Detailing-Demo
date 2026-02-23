@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111111;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow5" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#e81c2e;stop-opacity:0.10" />
+      <stop offset="100%" style="stop-color:#e81c2e;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="carPaint5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5a1e;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#1a3310;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg5)" />
+  <rect width="400" height="400" fill="url(#glow5)" />
+  <rect x="1" y="1" width="398" height="398" fill="none" stroke="#e81c2e" stroke-width="1" opacity="0.15" rx="8" />
+  <!-- Pickup truck silhouette -->
+  <g transform="translate(200, 195)">
+    <!-- Ground shadow -->
+    <ellipse cx="0" cy="75" rx="140" ry="12" fill="#000" opacity="0.3" />
+    <!-- Truck bed -->
+    <path d="M30,-15 L30,40 L155,40 L155,-15 Z" fill="url(#carPaint5)" stroke="#3a6b2a" stroke-width="1" />
+    <!-- Bed rail -->
+    <line x1="30" y1="-15" x2="155" y2="-15" stroke="#3a6b2a" stroke-width="2" />
+    <!-- Truck cabin -->
+    <path d="M-145,40 L-140,40 L-130,5 L-110,-25 L-80,-50 L-30,-60 L20,-60 L30,-50 L30,40 Z" fill="url(#carPaint5)" stroke="#3a6b2a" stroke-width="1.5" />
+    <!-- Roof line -->
+    <path d="M-80,-50 L-30,-60 L20,-60 L30,-50" fill="none" stroke="#4a7b3a" stroke-width="1" opacity="0.5" />
+    <!-- Windshield -->
+    <path d="M-75,-45 L-25,-55 L15,-55 L25,-45 L15,-15 L-65,-15 Z" fill="#0a0a0a" stroke="#333" stroke-width="1" opacity="0.8" />
+    <!-- Bed floor -->
+    <rect x="35" y="30" width="115" height="10" fill="#1a1a1a" opacity="0.4" />
+    <!-- Tailgate -->
+    <rect x="148" y="-10" width="7" height="50" rx="1" fill="url(#carPaint5)" stroke="#3a6b2a" stroke-width="1" />
+    <!-- Front wheel - bigger for truck -->
+    <circle cx="-85" cy="65" r="32" fill="#0a0a0a" stroke="#333" stroke-width="2.5" />
+    <circle cx="-85" cy="65" r="20" fill="#1a1a1a" stroke="#444" stroke-width="1" />
+    <circle cx="-85" cy="65" r="6" fill="#333" />
+    <!-- Rear wheel -->
+    <circle cx="110" cy="65" r="32" fill="#0a0a0a" stroke="#333" stroke-width="2.5" />
+    <circle cx="110" cy="65" r="20" fill="#1a1a1a" stroke="#444" stroke-width="1" />
+    <circle cx="110" cy="65" r="6" fill="#333" />
+    <!-- Headlight -->
+    <rect x="-145" y="15" width="10" height="16" rx="3" fill="#fff" opacity="0.25" />
+    <!-- Taillight -->
+    <rect x="150" y="15" width="5" height="12" rx="1" fill="#e81c2e" opacity="0.5" />
+    <!-- Side step -->
+    <rect x="-50" y="50" width="70" height="4" rx="2" fill="#444" opacity="0.4" />
+    <!-- Door line -->
+    <line x1="-20" y1="-48" x2="-20" y2="40" stroke="#3a6b2a" stroke-width="0.5" opacity="0.5" />
+  </g>
+  <!-- Label -->
+  <text x="200" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="bold" letter-spacing="3" opacity="0.7">GALLERY</text>
+  <text x="200" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#e81c2e" font-weight="bold" opacity="0.6">05</text>
+</svg>

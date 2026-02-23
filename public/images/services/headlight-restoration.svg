@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111111;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="35%">
+      <stop offset="0%" style="stop-color:#e81c2e;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#e81c2e;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="lightBeam" cx="30%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)" />
+  <rect width="400" height="400" fill="url(#glow)" />
+  <!-- Border -->
+  <rect x="1" y="1" width="398" height="398" fill="none" stroke="#e81c2e" stroke-width="1" opacity="0.2" rx="8" />
+  <!-- Headlight icon -->
+  <g transform="translate(200, 155)" fill="none" stroke="#e81c2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Headlight housing shape -->
+    <path d="M-50,-40 C-30,-55 30,-55 50,-40 L60,-10 C65,10 60,35 50,45 L-50,45 C-60,35 -65,10 -60,-10 Z" fill="#e81c2e" opacity="0.12" stroke="#e81c2e" />
+    <!-- Inner lens -->
+    <path d="M-35,-28 C-20,-38 20,-38 35,-28 L42,-8 C45,8 42,25 35,32 L-35,32 C-42,25 -45,8 -42,-8 Z" fill="#e81c2e" opacity="0.08" stroke="#e81c2e" stroke-width="2" />
+    <!-- Bulb -->
+    <circle cx="0" cy="2" r="15" fill="#e81c2e" opacity="0.2" stroke="#e81c2e" stroke-width="2" />
+    <circle cx="0" cy="2" r="6" fill="#e81c2e" opacity="0.4" />
+    <!-- Light beam rays -->
+    <g stroke="#fff" stroke-width="2" opacity="0.3">
+      <line x1="70" y1="-15" x2="95" y2="-25" />
+      <line x1="72" y1="0" x2="100" y2="0" />
+      <line x1="70" y1="15" x2="95" y2="25" />
+      <line x1="-70" y1="-15" x2="-95" y2="-25" />
+      <line x1="-72" y1="0" x2="-100" y2="0" />
+      <line x1="-70" y1="15" x2="-95" y2="25" />
+    </g>
+    <!-- Light glow effect -->
+    <circle cx="0" cy="2" r="35" fill="#fff" opacity="0.03" />
+    <!-- Sparkle for "restoration" -->
+    <g stroke="#fff" stroke-width="2" opacity="0.5">
+      <line x1="55" y1="-50" x2="63" y2="-50" />
+      <line x1="59" y1="-54" x2="59" y2="-46" />
+      <line x1="-58" y1="-48" x2="-66" y2="-48" />
+      <line x1="-62" y1="-52" x2="-62" y2="-44" />
+    </g>
+    <!-- Before/after divider hint -->
+    <line x1="0" y1="-60" x2="0" y2="55" stroke="#fff" stroke-width="1" opacity="0.08" stroke-dasharray="4,4" />
+  </g>
+  <!-- Label -->
+  <text x="200" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" letter-spacing="2">HEADLIGHT</text>
+  <text x="200" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold" letter-spacing="2">RESTORATION</text>
+  <rect x="140" y="332" width="120" height="2" rx="1" fill="#e81c2e" opacity="0.6" />
+  <text x="200" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#fff" opacity="0.1">400 x 400</text>
+</svg>

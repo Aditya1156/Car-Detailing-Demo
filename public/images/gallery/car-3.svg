@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111111;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow3" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#e81c2e;stop-opacity:0.10" />
+      <stop offset="100%" style="stop-color:#e81c2e;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="carPaint3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a6a;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#0d1f3c;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg3)" />
+  <rect width="400" height="400" fill="url(#glow3)" />
+  <rect x="1" y="1" width="398" height="398" fill="none" stroke="#e81c2e" stroke-width="1" opacity="0.15" rx="8" />
+  <!-- Low-profile sports car / supercar silhouette -->
+  <g transform="translate(200, 210)">
+    <!-- Ground shadow -->
+    <ellipse cx="0" cy="50" rx="140" ry="10" fill="#000" opacity="0.3" />
+    <!-- Supercar body - very low, wide, aggressive -->
+    <path d="M-150,30 L-140,30 L-130,5 L-100,-15 L-60,-30 L-20,-35 L30,-35 L70,-30 L110,-15 L140,0 L155,20 L155,35 L155,45 L-150,45 Z" fill="url(#carPaint3)" stroke="#2a4a7a" stroke-width="1.5" />
+    <!-- Very low windshield -->
+    <path d="M-55,-28 L-15,-33 L30,-33 L65,-28 L50,-10 L-45,-10 Z" fill="#0a0a0a" stroke="#333" stroke-width="1" opacity="0.8" />
+    <!-- Rear spoiler -->
+    <path d="M120,-18 L145,-25 L155,-20 L140,-12" fill="url(#carPaint3)" stroke="#2a4a7a" stroke-width="1" />
+    <!-- Side air intake -->
+    <path d="M-20,-5 L20,-5 L25,10 L-25,10 Z" fill="#0a0a0a" opacity="0.5" stroke="#333" stroke-width="0.5" />
+    <!-- Front wheel -->
+    <circle cx="-95" cy="45" r="26" fill="#0a0a0a" stroke="#333" stroke-width="2" />
+    <circle cx="-95" cy="45" r="16" fill="#1a1a1a" stroke="#444" stroke-width="1" />
+    <circle cx="-95" cy="45" r="4" fill="#333" />
+    <!-- Rear wheel -->
+    <circle cx="100" cy="45" r="26" fill="#0a0a0a" stroke="#333" stroke-width="2" />
+    <circle cx="100" cy="45" r="16" fill="#1a1a1a" stroke="#444" stroke-width="1" />
+    <circle cx="100" cy="45" r="4" fill="#333" />
+    <!-- LED headlights -->
+    <path d="M-148,20 L-140,15 L-135,25 Z" fill="#fff" opacity="0.3" />
+    <!-- Taillights -->
+    <rect x="148" y="22" width="6" height="10" rx="1" fill="#e81c2e" opacity="0.6" />
+    <!-- Side skirt line -->
+    <line x1="-130" y1="35" x2="145" y2="35" stroke="#2a4a7a" stroke-width="0.5" opacity="0.5" />
+    <!-- Hood scoop -->
+    <path d="M-40,-30 L-10,-33 L20,-33 L-5,-25 Z" fill="#0a0a0a" opacity="0.3" stroke="#333" stroke-width="0.5" />
+  </g>
+  <!-- Label -->
+  <text x="200" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="bold" letter-spacing="3" opacity="0.7">GALLERY</text>
+  <text x="200" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#e81c2e" font-weight="bold" opacity="0.6">03</text>
+</svg>

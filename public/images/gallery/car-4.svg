@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111111;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow4" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#e81c2e;stop-opacity:0.10" />
+      <stop offset="100%" style="stop-color:#e81c2e;stop-opacity:0" />
+    </radialGradient>
+    <linearGradient id="carPaint4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#cccccc;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg4)" />
+  <rect width="400" height="400" fill="url(#glow4)" />
+  <rect x="1" y="1" width="398" height="398" fill="none" stroke="#e81c2e" stroke-width="1" opacity="0.15" rx="8" />
+  <!-- Luxury sedan silhouette (front 3/4 view feel) -->
+  <g transform="translate(200, 200)">
+    <!-- Ground shadow -->
+    <ellipse cx="0" cy="65" rx="125" ry="12" fill="#000" opacity="0.3" />
+    <!-- Car body - luxury sedan, smooth lines -->
+    <path d="M-140,40 L-135,40 L-125,10 L-95,-18 L-60,-42 L-20,-52 L30,-52 L70,-42 L100,-22 L125,-5 L140,18 L148,40 L148,55 L-140,55 Z" fill="url(#carPaint4)" stroke="#666" stroke-width="1" />
+    <!-- Roof chrome trim -->
+    <path d="M-60,-42 L-20,-52 L30,-52 L70,-42" fill="none" stroke="#888" stroke-width="1.5" opacity="0.5" />
+    <!-- Windshield -->
+    <path d="M-55,-38 L-15,-48 L30,-48 L65,-38 L50,-8 L-45,-8 Z" fill="#0a0a0a" stroke="#444" stroke-width="0.5" opacity="0.8" />
+    <!-- Rear window -->
+    <path d="M65,-38 L100,-18 L90,-8 L50,-8 Z" fill="#0a0a0a" stroke="#444" stroke-width="0.5" opacity="0.6" />
+    <!-- Chrome door handle -->
+    <rect x="-15" y="5" width="25" height="4" rx="2" fill="#888" opacity="0.4" />
+    <!-- Side body crease -->
+    <path d="M-130,20 L-80,10 L80,10 L140,22" fill="none" stroke="#888" stroke-width="0.5" opacity="0.3" />
+    <!-- Front wheel -->
+    <circle cx="-85" cy="55" r="28" fill="#0a0a0a" stroke="#444" stroke-width="2" />
+    <circle cx="-85" cy="55" r="18" fill="#1a1a1a" stroke="#555" stroke-width="1" />
+    <circle cx="-85" cy="55" r="5" fill="#444" />
+    <!-- Wheel spokes hint -->
+    <g stroke="#555" stroke-width="1" opacity="0.3">
+      <line x1="-85" y1="37" x2="-85" y2="43" />
+      <line x1="-67" y1="55" x2="-73" y2="55" />
+      <line x1="-85" y1="73" x2="-85" y2="67" />
+      <line x1="-103" y1="55" x2="-97" y2="55" />
+    </g>
+    <!-- Rear wheel -->
+    <circle cx="95" cy="55" r="28" fill="#0a0a0a" stroke="#444" stroke-width="2" />
+    <circle cx="95" cy="55" r="18" fill="#1a1a1a" stroke="#555" stroke-width="1" />
+    <circle cx="95" cy="55" r="5" fill="#444" />
+    <g stroke="#555" stroke-width="1" opacity="0.3">
+      <line x1="95" y1="37" x2="95" y2="43" />
+      <line x1="113" y1="55" x2="107" y2="55" />
+      <line x1="95" y1="73" x2="95" y2="67" />
+      <line x1="77" y1="55" x2="83" y2="55" />
+    </g>
+    <!-- Front grille/headlight -->
+    <path d="M-138,30 L-130,20 L-125,30 Z" fill="#fff" opacity="0.25" />
+    <!-- Taillight -->
+    <path d="M142,22 L148,30 L148,42 L142,40 Z" fill="#e81c2e" opacity="0.5" />
+  </g>
+  <!-- Label -->
+  <text x="200" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" font-weight="bold" letter-spacing="3" opacity="0.7">GALLERY</text>
+  <text x="200" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#e81c2e" font-weight="bold" opacity="0.6">04</text>
+</svg>
